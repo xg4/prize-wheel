@@ -22,8 +22,8 @@ export default class Turntable {
   private radius: number // 转盘半径
   private center: { x: number; y: number } // 中心点
   private duration: number // 旋转时间
-  private isStart = false // 是否开始旋转
-  private count = 1 // 转盘次数
+  private isStart: boolean // 是否开始旋转
+  private count: number // 转盘次数
   private prizes: Prize[]
   private totalCount: number
 
@@ -46,6 +46,8 @@ export default class Turntable {
     // 转盘半径
     this.radius = Math.min(this.width, this.height) / 2 - this.theme.outerWidth
 
+    this.isStart = false
+    this.count = 1
     this.prizes = []
     Promise.all(list.map(item => loadImage(item.image))).then(images => {
       this.prizes = images.map((image, index) => {
