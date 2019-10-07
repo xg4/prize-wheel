@@ -7,7 +7,8 @@
   "author": "xg4 <xingor4@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "react": "^16.10.2",
