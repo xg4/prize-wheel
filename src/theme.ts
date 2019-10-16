@@ -1,9 +1,9 @@
-export default class Theme {
-  public outerWidth: number
-  public borderColor: string
+export interface Theme {
+  outerWidth: number
+  borderColor: string
+}
 
-  constructor() {
-    this.outerWidth = 25
-    this.borderColor = '#954bd6'
-  }
+export default {
+  outerWidth: 25,
+  borderColor: '#954bd6'
 }

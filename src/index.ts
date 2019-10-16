@@ -1,6 +1,6 @@
 import { query, loadImage } from './utils'
 import Prize from './prize'
-import Theme from './theme'
+import defaultTheme, { Theme } from './theme'
 
 export interface ListItem {
   image: string
@@ -15,7 +15,7 @@ export interface Options {
   height?: number
 }
 
-export default class Turntable {
+export default class PrizeWheel {
   private theme: Theme
   private $el: HTMLCanvasElement
   private $ctx: CanvasRenderingContext2D
@@ -28,7 +28,7 @@ export default class Turntable {
   private totalCount: number
 
   constructor({ el, list, duration, width, height }: Options) {
-    this.theme = new Theme()
+    this.theme = Object.assign({}, defaultTheme)
     this.$el = query(el)
     this.$ctx = this.$el.getContext('2d') as CanvasRenderingContext2D
 

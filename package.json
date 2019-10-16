@@ -1,15 +1,15 @@
 {
-  "name": "@xg/turntable",
+  "name": "@xg/prize-wheel",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/xg4/turntable#readme",
+  "homepage": "https://github.com/xg4/prize-wheel#readme",
   "bugs": {
-    "url": "https://github.com/xg4/turntable/issues"
+    "url": "https://github.com/xg4/prize-wheel/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xg4/turntable.git"
+    "url": "git+https://github.com/xg4/prize-wheel.git"
   },
   "license": "MIT",
   "author": "xg4 <xingor4@gmail.com>",

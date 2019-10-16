@@ -1,8 +1,8 @@
 import React from 'react'
-import Turntable from '../../src/index'
+import PrizeWheel from '../../src/index'
 
 const App: React.FC = () => {
-  const t = new Turntable({
+  const t = new PrizeWheel({
     el: '#tt',
     list: [
       {
